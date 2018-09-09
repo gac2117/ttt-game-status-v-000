@@ -55,5 +55,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).find{|token| token.is_a?(string)}
+  won?(board).each do |token|
+    token.find{|i| i.is_a(string)}
+  end
 end
