@@ -56,6 +56,6 @@ end
 
 def winner(board)
   won?(board).each do |token|
-    token.find{|i| i.is_a(string)}
+    token.detect{|i| i.is_a(string)}
   end
 end
